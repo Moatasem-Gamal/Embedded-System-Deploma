@@ -1,0 +1,70 @@
+22:52:31 **** Rebuild of configuration Debug for project EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o EX1.exe main.o 
+Info: Nothing to build for EX1
+Info: Nothing to build for EX1
+Info: Nothing to build for EX1
+22:56:30 **** Rebuild of configuration Debug for project EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:14:10: warning: multi-character character constant [-Wmultichar]
+  scanf ( '%i' , x ) ;
+          ^~~~
+..\main.c:14:10: warning: passing argument 1 of 'scanf' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ..\main.c:8:0:
+c:\mingw\include\stdio.h:667:41: note: expected 'const char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int    scanf (const char *, ...);
+                                         ^~~~~
+..\main.c:14:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf ( '%i' , x ) ;
+  ^~~~~~~~~~~~~~~~~~
+gcc -o EX2.exe main.o 
+Info: Nothing to build for EX2
+Info: Nothing to build for EX2
+Info: Nothing to build for EX1
+22:57:11 **** Incremental Build of configuration Debug for project EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:14:12: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf ( "%i" , x ) ;
+            ^
+..\main.c:14:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf ( "%i" , x ) ;
+  ^~~~~~~~~~~~~~~~~~
+gcc -o EX2.exe main.o 
+Info: Nothing to build for EX2
+Info: Nothing to build for EX1
+Info: Nothing to build for EX2
+23:02:12 **** Rebuild of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o mian.o "..\\mian.c" 
+..\mian.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\mian.c: In function 'main':
+..\mian.c:14:11: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf ("%i" , x ) ;
+           ^
+..\mian.c:16:11: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf ("%i" , y ) ;
+           ^
+..\mian.c:14:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf ("%i" , x ) ;
+  ^~~~~~~~~~~~~~~~~
+..\mian.c:16:2: warning: 'y' is used uninitialized in this function [-Wuninitialized]
+  scanf ("%i" , y ) ;
+  ^~~~~~~~~~~~~~~~~
+gcc -o EX3.exe mian.o 
+Info: Nothing to build for EX3
